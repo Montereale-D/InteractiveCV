@@ -36,19 +36,18 @@
 <body>
 	<div id="gameContainer">
 		<canvas id="unity-canvas" data-pixel-art=""></canvas>
-		<script src="Build/Deploy2.loader.js"></script>
+		<script src="Build/DeployWebGL.loader.js"></script>
 		<script>
 			var canvas = document.querySelector("#unity-canvas");
 			var config = {
-				dataUrl: "Build/Deploy2.data",
-				frameworkUrl: "Build/Deploy2.framework.js",
-				codeUrl: "Build/Deploy2.wasm",
+				dataUrl: "Build/DeployWebGL.data",
+				frameworkUrl: "Build/DeployWebGL.framework.js",
+				codeUrl: "Build/DeployWebGL.wasm",
 				streamingAssetsUrl: "StreamingAssets",
 				companyName: "DefaultCompany",
 				productName: "InteractiveWebsite",
 				productVersion: "1.0",
 			};
-
 			function onResize() {
 				canvas.width = window.innerWidth;
 				canvas.height = window.innerHeight;
