@@ -57,7 +57,7 @@
 
 	function onResize() {
 		var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-		var scaleFactor = 1.0; // Riduci leggermente su mobile
+		var scaleFactor = 1.0;
 		var w = window.innerWidth * scaleFactor;
 		var h = window.innerHeight * scaleFactor;
 
@@ -81,7 +81,7 @@
 	if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
 		const meta = document.createElement("meta");
 		meta.name = "viewport";
-		meta.content = "width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no";
+		meta.content = "width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, user-scalable=no";
 		document.head.appendChild(meta);
 	}
 </script>
